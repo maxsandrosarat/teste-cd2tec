@@ -1,0 +1,13 @@
+body{
+    padding: 20px;
+}
+.container{
+    margin-top: 20px;
+}
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.green { 
+    color:green;
+}
+.material-icons.red { 
+    color:red;
+}  

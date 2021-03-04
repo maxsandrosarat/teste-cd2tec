@@ -1,0 +1,21 @@
+Instruções para o Teste do Sistema (Buscar Endereço)
+
+1 - Baixar todos os arquivos do sistema, e descompacta-los (caso necessário);
+2 - Mover os arquivos para uma pasta raiz de um Servidor PHP;
+3 - Criar um Banco de Dados como o nome "cd2tec" e importar o arquivo "enderecos.sql";
+4 - Editar as configurações do BD conforme o utilizado para teste no arquivo "resultado.php" (4 primeiras variáveis no inicio do arquivo);
+5 - Após tudo configurado, acessar a pasta raiz do sistema (Servidor PHP) pelo Navegador;
+6 - Utilizar o sistema.
+
+Como utilizar o Sistema (Buscar Endereço)
+
+1 - Na tela inicial informar o cep do endereço, o botão buscar só será habilitado após ser digitado os 8 números:
+    1.1 Caso não digitar todos os números e tentar fazer a busca será apresentado mensagem de erro;
+    1.2 Caso digitar caracteres que não sejam números o campo será limpo automaticamente;
+2 - Após informar cep válido, o sistema será redirecionado para outra página onde mostra o endereço:
+    2.1 Caso endereço seja encontrado, irá apresentar o endereço, um campo para copiar o endereço ou botão de autocopiar (caso deseja) e o botão de "Nova Consulta";
+    2.2 Caso endereço não seja encontrado, irá informar que não encontrado e o botão de "Nova Consulta".
+
+Nota: O sistema verifica se o endereço já está na base de dados:
+    * se tiver, apresenta os dados da base para o usuário;
+    * senão tiver, faz a consulta na api viacep, retorna em xml e converte para ser salvo na base de dados e apresentado para o usuário.
